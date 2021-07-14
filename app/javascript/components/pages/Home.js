@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-
+//import CoolPic from "../assets/images/apartment.jpg";
 export class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome To Paradise</h1>
+        <h1>Find Your Perfect Apartment </h1>
       </div>
     );
   }

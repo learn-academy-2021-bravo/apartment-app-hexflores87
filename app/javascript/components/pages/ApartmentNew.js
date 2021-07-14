@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
 import { Redirect } from "react-router-dom";
+
 class ApartmentNew extends Component {
   constructor(props) {
     super(props);
@@ -10,28 +11,28 @@ class ApartmentNew extends Component {
         city: "",
         state: "",
         manager: "",
-        manager_email: "",
+        email: "",
         price: "",
         bedrooms: "",
         bathrooms: "",
       },
       success: false,
     };
-    handleSubmit = (e) => {
-      e.preventDefault();
-      this.props.createNewApartment(this.state.form);
-      this.setState({ success: true });
-    };
-    handleChange = (e) => {
-      let { form } = this.state;
-      form[e.target.name] = e.target.value;
-      this.setState({ form: form });
-    };
   }
+  handleChange = (e) => {
+    let { form } = this.state;
+    form[e.target.name] = e.target.value;
+    this.setState({ form: form });
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.createNewApartment(this.state.form);
+    this.setState({ success: true });
+  };
   render() {
     return (
       <>
-        <h3>This is the New Page</h3>
+        <h3>Start Your San Diego Apartment Search!</h3>
         <Form id="form">
           <FormGroup>
             <Label for="name">Street</Label>

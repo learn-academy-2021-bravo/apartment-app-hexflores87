@@ -13,11 +13,11 @@ export class ApartmentShow extends Component {
               Information on apartment at address: {apartment.street}
             </CardTitle>
             <CardText>
-              Apartment located in {apartment.city},{apartment.state}. Rent is{" "}
-              {apartment.price}. The apartment has {apartment.bedrooms} bedrooms
-              and {apartment.bathrooms} bathrooms. Pets allowed?{" "}
-              {apartment.pets}. If interested please contact {apartment.manager}{" "}
-              at {apartment.manager_email}.{" "}
+              Apartment located at {apartment.city},{apartment.state}. Rent
+              includes {apartment.price}. The apartment has {apartment.bedrooms}{" "}
+              bedrooms and {apartment.bathrooms} bathrooms. Pets allowed?{" "}
+              {apartment.pets}. If this interests you please contact{" "}
+              {apartment.manager} at {apartment.manager_email}.{" "}
             </CardText>
           </Card>
         </Col>
